@@ -12,7 +12,9 @@ def index(request):
 	
 	return HttpResponse(result)
 '''
-def index(request, id, nickname):
-	result = 'you id: ' + str(id) + ', name: "' + nickname + '".'
+#def index(request, id, nickname):
+def index(request, nickname, age):
+	#result = 'you id: ' + str(id) + ', name: "' + nickname + '".'
+	result = 'you account: ' + nickname + '"(' + str(age) + ').'
 	
 	return HttpResponse(result)
